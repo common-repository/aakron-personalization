@@ -1,0 +1,76 @@
+/**
+* All of the CSS for your admin-specific functionality should be
+* included in this file.
+*/
+div#user_registration-form { display: block; width: 100%; }
+.aakron_design_tool_registration label { display: block; float: left; width: 130px;line-height: 3; }
+.aakron_design_tool_registration input[type="text"], .aakron_design_tool_registration input[type="password"],
+.aakron_design_tool_registration input[type="email"] {padding: 10px 12px; background: #f0f0f0; border: 1px solid #ccc; vertical-align: middle; margin: 5px 0;border-radius:5px;width: 320px; height: 35px;}
+.aakron_design_tool_registration input[type="text"]:focus, .aakron_design_tool_registration input[type="password"]:focus,
+.aakron_design_tool_registration input[type="email"]:focus {border-color: #aaa;}
+.aakron_design_tool_registration input[type="submit"]{vertical-align: baseline; background: #007cba; border-color: #007cba; color: #fff; text-decoration: none; text-shadow: none; font-size: 13px; line-height: 2.15384615; min-height: 30px; margin: 20px 0; padding: 0 10px; cursor: pointer; border-width: 1px; border-style: solid; -webkit-appearance: none; border-radius: 3px; white-space: nowrap; box-sizing: border-box;}
+.aakron_design_tool_registration input[type="submit"]:hover{background: #0071a1;border-color: #0071a1;color: #fff;}
+#aakron_api_table_wrapper input[type="text"]{padding: 10px 12px; background: #f0f0f0; border: 1px solid #ccc; vertical-align: middle; margin: 5px 0; border-radius: 5px;}
+#regError { display:block; color: #D8000C; background-color: #FFBABA; margin: 10px 0; padding: 6px 10px; border-radius: 3px 3px 3px 3px; font-size: 16px; font-weight: 600; }
+#regImpError { display:block; color: #D8000C; background-color: #FFBABA; margin: 10px 0; padding: 6px 10px; border-radius: 3px 3px 3px 3px; font-size: 16px; font-weight: 600; }
+#regSuccess{ margin: 10px 0; padding: 6px 10px; border-radius: 3px 3px 3px 3px; color: #270; background-color: #DFF2BF; font-size: 16px; line-height: 1; font-weight: 600; }
+#success_message_key_api{ display:block; width:35%; padding: 8px; border: 1px solid #82b641; margin: 0 0 15px; }
+/* The container */
+#select-sync-type .container {display: block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 18px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+/* Hide the browser's default radio button */
+#select-sync-type .container input {position: absolute;opacity: 0;cursor: pointer;}
+/* Create a custom radio button */
+#select-sync-type .checkmark {position: absolute;top: 0;left: 0;height: 25px;width: 25px;background-color: #d3d3d3;border-radius: 50%;}
+/* On mouse-over, add a grey background color */
+#select-sync-type .container:hover input ~ .checkmark {background-color: #ccc;}
+/* When the radio button is checked, add a blue background */
+#select-sync-type .container input:checked ~ .checkmark {background-color: #2196F3;}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+#select-sync-type .checkmark:after {content: "";position: absolute;display: none;}
+/* Show the indicator (dot/circle) when checked */
+#select-sync-type .container input:checked ~ .checkmark:after {display: block;}
+/* Style the indicator (dot/circle) */
+#select-sync-type .container .checkmark:after {top: 3px;left: 3px;width: 19px;height: 19px;border-radius: 50%;background: white;} 
+input#sku_list{display: none;width: 50%;padding: 10px 0px;border-radius: 5px;border: 1px solid #000;}
+#js_overlay_spinner {position: fixed;top: 0;left: 0;bottom: 0;right: 0;background: rgba(0,0,0,.7);}
+.overlay__wrapper {width: 100%;height: 100%;position: relative;}
+.overlay__spinner {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}
+.overlay__spinner img{width: 100%;height:auto;max-width: 320px;}
+.sync-success p{display: inline-block;padding: 5px;font-size: 16px;font-weight: 700;border: 1px solid #00b200;color: #00b200;}
+
+/** new css **/
+.aakron-design-tool-main {background-color: #fff;margin-top: 20px;padding: 20px;     min-height: 400px; width: 90%;}
+.aakron-design-tool-main h3 {background-color: #2196f3;color: #fff;padding: 20px;margin: -20px -20px 020px -20px;font-size: 22px;line-height: normal;}
+.aakron-design-tool-main div#select-sync-type { }
+.aakron-design-tool-main div#select-sync-type label {margin-bottom: 20px;}
+.aakron-design-tool-main input#sku_list {padding: 10px;}
+div#js_overlay_spinner {z-index: 111111;}
+.aakron-design-tool-main .forms-box {display: block;width: 100%;float: left;}
+.aakron-design-tool-main .forms-box label {font-size: 16px;display: inline-block;width: 200px;}
+.aakron-design-tool-main .forms-box input {background-color: #fff;}
+
+.aakron-design-tool-main .form-table td.forminp select {border: 1px solid #ccc;vertical-align: middle;margin: 5px 0;border-radius: 5px;width: 320px;height: 35px;}
+.aakron-design-tool-main .form-table td.forminp input {padding: 10px 12px;border: 1px solid #ccc;vertical-align: middle;margin: 5px 0;border-radius: 5px;width: 320px;height: 35px;}
+.aakron-design-tool-main .form-table tr td {margin-bottom: 0; padding: 0 0 10px 0;}
+div#error_message_key_api .wc-api-message.error  {margin: 10px 0;border: solid 1px #dc3232;color: #dc3232;font-weight: 600;display: inline-block;min-width: 300px;}
+div#error_message_key_api .wc-api-message.error p {font-size: 16px;}
+.aakron-design-tool-main div#output_wrapper_success {/*padding-top: 50px;*/}
+.aakron-design-tool-main div#output_wrapper_success table#aakron_api_table_wrapper td input {padding: 10px 12px;border: 1px solid #ccc;vertical-align: middle;margin: 5px 0;border-radius: 5px;width: 320px;height: 35px;background-color: #fff;}
+
+.aakron-design-tool-main.setings-pages .aakron_design_row th,
+.aakron-design-tool-main.setings-pages .aakron_design_row td {float: left;display: block;width: 100%;}
+.aakron-design-tool-main.setings-pages .aakron_design_row td input[type="text"] {padding: 10px 12px;background: #fff;border: 1px solid #ccc;vertical-align: middle;margin: 5px 0;border-radius: 5px;width: 320px;height: 35px;}
+.aakron-design-tool-main.sync-table .aakron_product_sync_log table tr td{
+	padding: 10px 5px;
+	border: 1px solid #000;
+}
+.aakron_product_sync_log span.page-numbers.current {background-color: #b3b3b3;color: #fff;padding: 5px 10px;text-decoration: none;display: inline-block;font-weight: 500;margin-top: 10px;}
+.aakron_product_sync_log a.page-numbers {background-color: #2196f3;color: #fff;padding: 5px 10px;text-decoration: none;display: inline-block;font-weight: 500;margin-top: 10px;}
+.aakron-design-tool-main .design_tool_status .btn-active{padding: 8px 32px; background: #008000; border: none; font-size: 16px; color: #fff; font-weight: 700;}
+.aakron-design-tool-main .design_tool_status .btn-pending{padding: 8px 32px; background: #FF7F00; border: none; font-size: 16px; color: #fff; font-weight: 700;}
+.design_tool_status input[type="submit"]{vertical-align: baseline; background: #007cba; border-color: #007cba; color: #fff; text-decoration: none; text-shadow: none; font-size: 13px; line-height: 2.15384615; min-height: 30px; margin: 20px 0; padding: 1px 14px; cursor: pointer; border-width: 1px; border-style: solid; -webkit-appearance: none; border-radius: 3px; white-space: nowrap; box-sizing: border-box;}
+.design_tool_status input[type="submit"]:hover{background: #0071a1;border-color: #0071a1;color: #fff;}
+.aakron-design-tool-main #sync-error{display:block; color: #D8000C; background-color: #FFBABA; margin: 10px 0; padding: 6px 10px; border-radius: 3px 3px 3px 3px; font-size: 16px; font-weight: 600;}
+.email-validate{margin: 10px 0; padding: 10px; border-radius: 3px 3px 3px 3px; color: #9F6000; background-color: #FEEFB3;}
+form.aakron_design_tool_registration .forms-box > .email-validate { display: inline-block; padding: 0px 10px; }
+form.aakron_design_tool_registration .forms-box > .email-validate > p { margin: 10px 0;}

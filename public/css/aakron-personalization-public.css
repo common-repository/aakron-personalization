@@ -1,0 +1,76 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ #aakron_artwork_design{ margin-top: 30px; background-color: #FF8C00;}
+ div#iframeHolder:after { content: ''; position: fixed; left: 0; width: 100%; height: 100%; background-color: rgb(0 0 0 / .51); top: 0; z-index: 111; }
+div#js_spinner:after { content: ''; position: fixed; left: 0; width: 100%; height: 100%; background-color: rgb(0 0 0 / .51); top: 0; z-index: 111; }
+div#js_spinner > img {    width: 100px;  height: 100px;  position: fixed; left: 50%;  margin: 0 auto;  z-index: 1111; top: 50%; transform: translateX(-50%) translateY(-50%);}
+div#js_spinner {position: fixed;z-index: 1111;}
+.product-template-default.single-product .images > .slick-slider {border: solid 1px #ccc;margin-top: 0;}
+.product-template-default.single-product .product-detail-summary .summary.entry-summary {margin-top: 0px;}
+.product-template-default.single-product .product-detail-summary .summary.entry-summary .product_title {font-size: 25px;}
+.product-template-default.single-product .product-detail-summary .summary.entry-summary .dynamic-price-quantity table td {padding: 5px;}
+.product-template-default.single-product .product-detail-summary .summary.entry-summary form.cart {margin-top: 20px;}
+.product-template-default.single-product .product-detail + .woocommerce-tabs.wc-tabs-wrapper .tabs.wc-tabs {
+margin-bottom: 15px;
+}
+.product-template-default.single-product section.related.products > h2 {
+margin: 10px 0 20px;
+text-align: left;
+border-bottom: solid 2px #ccc;
+padding-bottom: 10px;
+text-transform: capitalize;
+font-size: 22px;
+}
+.product-template-default.single-product section.related.products .products li {padding: 0;margin: 0 15px;border: solid 1px #ccc;width: calc(25% - 30px);}
+.product-template-default.single-product .product-detail-summary .summary.entry-summary form.cart div#js_design_tool_div {width: 100%;display: inline-block;margin-bottom: 10px;}
+.product-template-default.single-product .product-detail-summary .summary.entry-summary form.cart div#js_design_tool_div button.single_add_to_cart_button {margin-top: 0;}
+#iframeHolder > a.iframeholder-close {background-color: #fff;display: inline-block;color: #000;position: fixed;top: 20px;right: 20px;width: 30px;height: 30px;z-index: 11111;border-radius: 17px;text-align: center;font-size: 28px;font-weight: 700;line-height: 24px;box-shadow: 0px 0px 7px rgb(108 108 108 / 50%);}
+.checkout.woocommerce-checkout .col-review-order .shop_table .product-name {padding-bottom: 0px;}
+.checkout.woocommerce-checkout .col-review-order .shop_table .product-name .variation img {width: 90px;}
+.checkout.woocommerce-checkout .col-review-order .shop_table #shipping_method {list-style: none;margin: 0;padding: 0;}
+.checkout.woocommerce-checkout .col-review-order .shop_table td {padding: 10px 0;}
+.product-template-default .site-main .woocommerce-notices-wrapper {position: relative;top: 0px;left: 0;width: 100%;background-color: #e1e2e3;}
+.product-template-default .site-main .woocommerce-notices-wrapper ul {margin-left: 0;list-style: none;color: #333333;padding: 5px 15px;}
+.product-detail-summary .summary.entry-summary p.price{display: none;}
+
+form.woocommerce-checkout{border: none;}
+
+
+
+
+.checkout .shipping_address p#shipping_city_field { -ms-flex-order: 2; order: 2; }
+.checkout .shipping_address p#shipping_state_field { -ms-flex-order: 0; order: 0; }
+.checkout .shipping_address p#shipping_postcode_field { -ms-flex-order: 2; order: 2; }
+.checkout .shipping_address .woocommerce-shipping-fields__field-wrapper {display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+.checkout .shipping_address > .woocommerce-shipping-fields__field-wrapper > p {-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}
+.checkout .shipping_address p#shipping_po_number_field { -ms-flex-order: 3; order: 3; }
+
+/* SHOP PAGE CSS */
+.woocommerce ul.products .product-inner > a {min-height: 250px;display: block;max-height: 250px;border: solid 1px #ccc;}
+.woocommerce ul.products .product-inner > a > img {width: auto !important;height: auto !important;max-width: 100%;max-height: 242px;}
+.woocommerce ul.products .product h2 {position: absolute;bottom: 0;min-height: 60px;}
+.woocommerce ul.products .product-inner > .product-price-button {margin-top: 60px;}
+
+body.home .product-inner > .product-thumb > a {min-height: 250px;display: block;max-height: 250px;border: solid 1px #ccc;}
+body.home .product-inner > .product-thumb > a > img {width: auto !important;height: auto !important;max-width: 100%;max-height: 242px;}
+body.home .product-inner > .product-details .product-title {min-height: 42px;margin-bottom: 0;font-weight: 400;}
+
+
+/* checkout fields disable css sssss*/
+/*.woocommerce-billing-fields__field-wrapper {
+position: relative;
+}
+
+.woocommerce-billing-fields__field-wrapper:after {content: '';position: absolute;background-color: rgb(53 53 53 / 0%);left: 0;top: 0;width: 100%;height: 100%;z-index: 1;}
+*/
+h3#ship-to-different-address input{display: none !important;}
+.woocommerce-checkout form.checkout .checkbox #ship-to-different-address-checkbox{display: none !important;}
+h3#ship-to-different-address span:before{display: none !important;}
+/*.woocommerce-billing-fields .form-row label {
+display: none !important;
+}*/
+h3#ship-to-different-address {
+pointer-events: none !important;
+}
